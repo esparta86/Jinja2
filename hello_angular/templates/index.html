@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+    <script src="/static/ctrlProgressBar.js"></script>
+        
+
+    <title>Flask-Triangle - Tutorial</title>
+  </head>
+  <body ng-app="mymodule">
+   <div ng-controller="testController" ng-init="init()">
+      <label>Name:</label>
+    <input type="text" ng-model="test" ng-bind="test" placeholder="Enter a name here">
+    <hr>
+        <input type="text" ng-model="xD" ng-bind="xD" placeholder="Enter a name here">
+
+    <h1>Hello {{bind}}</h1>
+    
+    <span ng-bind="xD"> </span> 
+    <span ng-bind="bind">{[bind]} </span>
+    <hr>
+   </div>
+    
+
+  </body>
+</html>
